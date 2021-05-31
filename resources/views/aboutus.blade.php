@@ -7,6 +7,7 @@
    padding: 30px 10px;
    border-radius: 7px;
    top: 0;
+   /* dasassz */
    position: relative;
    -webkit-transition: .3s all ease-in-out;
    -o-transition: .3s all ease-in-out;
