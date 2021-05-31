@@ -63,7 +63,7 @@
             <div class="col-md-12">
                <div class="row justify-content-center mb-4">
                   <div class="col-md-8 text-center  form-search-wrap" style="margin-top: 15%" >
-                     <h1 style="color: black; font-weight: 800" class="" data-aos="fade-up">Stripe</h1>
+                     <h1 style="color: black; font-weight: 800" class="" data-aos="fade-up">Credit / Debit Card</h1>
                   </div>
                </div>
             </div>
@@ -94,7 +94,7 @@
   
 <div class="container">
   
-    <h1>Stripe Payment</h1>
+    <h1>Credit / Debit Payment</h1>
   
     <div class="row">
         <div class="col-md-6 col-md-offset-3">

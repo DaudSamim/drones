@@ -73,7 +73,7 @@
                                         <a title="" href="customer">Customer Dashboard</a></li>
                                     <li id="menu-item-4891"
                                         class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4891">
-                                        <a href="vendor">Vendor Dashboard</a></li>
+                                        <a href="contributor">Contributor Dashboard</a></li>
                                 </ul>
                             </div>
                         </div>

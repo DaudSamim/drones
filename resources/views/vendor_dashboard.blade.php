@@ -63,7 +63,7 @@
             <div class="col-md-12">
                <div class="row justify-content-center mb-4">
                   <div class="col-md-8 text-center  form-search-wrap" style="margin-top: 15%" >
-                     <h1 style="color: black; font-weight: 800" class="" data-aos="fade-up">Vendor Dashboard </h1>
+                     <h1 style="color: black; font-weight: 800" class="" data-aos="fade-up">Contributor Dashboard </h1>
                   </div>
                </div>
             </div>

@@ -107,7 +107,7 @@ Route::get('about_us',function(){
 Route::get('customer',function(){
     return view('customer_dashboard');
 });
-Route::get('vendor',function(){
+Route::get('contributor',function(){
     return view('vendor_dashboard');
 });
 
@@ -208,6 +208,6 @@ Route::middleware('auth')->group(function ()
     Route::get('/confirm/{id}', '\App\Http\Controllers\HomeController@getConfirm');
     Route::get('/commissions/{id}', '\App\Http\Controllers\HomeController@getCommission');
     Route::post('commissions', '\App\Http\Controllers\HomeController@postCommission')->name('commission');
-    Route::get('/view-vendors', '\App\Http\Controllers\HomeController@getVendors');
+    Route::get('/view-contributor', '\App\Http\Controllers\HomeController@getVendors');
 
 });

@@ -8,10 +8,10 @@
         <div class="col-md-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <button type="button" class="card-title btn btn-primary btn-sm float-right text-white" data-toggle="modal" data-target="#new_user">
+                    <!-- <button type="button" class="card-title btn btn-primary btn-sm float-right text-white" data-toggle="modal" data-target="#new_user">
                         Add New Vendor
-                    </button>
-                    <h6 class="card-title">Vendors</h6>
+                    </button> -->
+                    <h6 class="card-title">Contributors</h6>
                   
 
                     <div class="table-responsive">

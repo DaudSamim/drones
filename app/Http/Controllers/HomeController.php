@@ -313,7 +313,7 @@ class HomeController extends Controller
         DB::table('vendors')->where('id', $request->id)->update([
             'commissions' => $request->commissions
         ]);
-        return redirect('view-vendors')->with('message','Successfully updated');
+        return redirect('view-contributor')->with('message','Successfully updated');
     }
 
     public function getConfirm($id)

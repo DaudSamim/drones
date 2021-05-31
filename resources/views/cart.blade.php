@@ -144,6 +144,7 @@
          </div>
       </div>
    </div>
+
    <!-- Modal -->
    <div class="modal fade" id="checkout" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -156,7 +157,7 @@
             </div>
             <div class="modal-body">
                <a href="/paypal"><button type="button" style="background-color: #3b009e; color:white" class="btn btn-secondary" >Paypal</button></a>
-               <a href="/stripe"><button type="button" style="background-color: #3b009e; color:white" class="btn btn-secondary">Stripe</button></a>
+               <a href="/stripe"><button type="button" style="background-color: #3b009e; color:white" class="btn btn-secondary">Credit / Debit Card</button></a>
             </div>
             <div class="modal-footer">
                <button type="button" class="btn btn-secondary btn-danger" data-dismiss="modal">Close</button>

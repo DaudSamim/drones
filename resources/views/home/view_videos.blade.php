@@ -81,7 +81,7 @@
 
                                                     <!-- Modal -->
         <div class="modal fade" id="{{'reject'.$row->id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
+          <div class="modal-dialog  modal-lg">
             <div class="modal-content">
               <div class="modal-header">
                 <h5 class="modal-title" id="exampleModalLabel">Reject Video</h5>
@@ -92,7 +92,17 @@
                     @csrf
                     <input type="hidden" value="{{$row->id}}" name="id">
                     <p>Rejection Message</p>
-                    <textarea name="message"  class="form-control" rows="3"></textarea> 
+                    <div class="container">
+                       <select class="form-control" name="message">
+                          <option>This Video Contains Recognizable People And Requires a Model Release</option>
+                          <option>This Video Contains Recognizable Property And Requires Intellectual Property Release</option>
+                          <option> Keywords: irrelevant or wrong keywords were used, keywords should best describe the content in the video</option>
+                          <option>Exposure / lighting: Clip is Underexposed, overexposed,inconsistently exposed or was shot in unfavourable conditions.</option>
+                          <option>Similar Content: This content is too similar to another clip that has already been submitted or published.</option>
+                          <option>Noise / Artifacts: Content contains noise, film grain, compression artifacts, pixelation, and/or posterization that detracts from the main subject.</option>
+                          <option> Camera Shakes: unintentioal camera shake, motion blur, or technical limitations of the equipment used (e.g. autofocus searching, camera sensor quality, etc).</option>
+                        </select>
+                    </div>
                 
               </div>
               <div class="modal-footer">

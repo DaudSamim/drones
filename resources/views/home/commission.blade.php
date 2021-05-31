@@ -1,7 +1,7 @@
 @extends('layout.app')
 
 @section('content')
-<h3 class="pb-4">Vendors Commissions</h3>
+<h3 class="pb-4">Contributor's Commissions</h3>
     @if ($errors->any())
         @foreach ($errors->all() as $error)
         <p class="alert alert-danger">{{$error}}</p> 
@@ -10,7 +10,7 @@
     <form id="btn-submit" method="post" action="/commissions" enctype='multipart/form-data'>
 
         <div class="form-group">
-            <h4 style="" for="exampleInputEmail1">Vendor Name</h4>
+            <h4 style="" for="exampleInputEmail1">Contributor's Name</h4>
            <span> <h5>{{$vendor->first_name}} {{$vendor->last_name}}</h5></span>
         </div>
 
