@@ -210,4 +210,5 @@ Route::middleware('auth')->group(function ()
     Route::post('commissions', '\App\Http\Controllers\HomeController@postCommission')->name('commission');
     Route::get('/view-contributor', '\App\Http\Controllers\HomeController@getVendors');
 
+
 });

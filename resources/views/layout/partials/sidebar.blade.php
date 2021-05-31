@@ -53,11 +53,11 @@
                                class="nav-link ">Qualities </a>
                         </li>
 
+                      
                         <li class="nav-item">
                             <a href="/view-purchases"
                                class="nav-link  ">Purchases </a>
                         </li>
-                    
                     
                         <li class="nav-item">
                             <a href="#"

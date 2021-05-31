@@ -5,6 +5,9 @@
         <div class="col-md-12 grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
+                <button type="button" class="card-title btn btn-primary btn-sm float-right text-white" data-toggle="modal" data-target="#new_quality">
+                        Add Quality
+                    </button>
                     
                     <h6 class="card-title">Video Qualities</h6>
                   @if(Session::has('message'))
@@ -68,6 +71,65 @@
             </div>
         </div>
     </div>
+<!-- Modal -->
+<div id="new_quality" class="modal fade" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Add New Quality</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body" id="m-body">
+                                    <span id="form_result"></span>
+                                    <form id="btn-submit" method="post" action="/view_videos" enctype='multipart/form-data'>
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Video Quality</label>
+                                            <input style="width: 100% !important;;" type="text" class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}" id="name" name="title"  aria-describedby="emailHelp" placeholder="Video Title">
+
+                                            @if ($errors->has('title'))
+                                                <span class="text-danger">
+                                            <small class="font-weight-bold">{{ $errors->first('title') }}</small>
+                                        </span>
+                                            @endif
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="exampleInputEmail1">Price</label>
+                                            <input style="width: 100% !important;;" type="text" class="form-control {{ $errors->has('title') ? 'is-invalid' : '' }}" id="name" name="title"  aria-describedby="emailHelp" placeholder="Video Title">
+
+                                            @if ($errors->has('title'))
+                                                <span class="text-danger">
+                                            <small class="font-weight-bold">{{ $errors->first('title') }}</small>
+                                        </span>
+                                            @endif
+                                        </div>
+
+                                        
+                                        
+
+                                        <div class="modal-footer">
+                                            <input type="submit" name="action_button"  class="btn btn-primary btn-block" value="Add" />
+                                            
+                                            <span
+                                                className="close cursor-pointer"
+                                                data-dismiss="modal"
+                                                aria-label="Close"
+                                                id="myModalClose">
+                                            </span>
+                                        
+                                            <input type="hidden" name="_token" value={{csrf_token()}}>
+
+                                        </div>
+
+
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
 
   
 @endsection

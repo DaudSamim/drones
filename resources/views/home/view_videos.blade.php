@@ -37,7 +37,7 @@
                                 <th>Title</th>
                                 <th>Poster</th>
                                 <th>File</th>
-                                <th>Price</th>
+                         
                                 <th>Category</th>
                                 <th>Status</th>
                                 @if(auth()->user()->role == 1)<th>Update</th> @endif
@@ -58,7 +58,7 @@
                                             <td>{{$row->title}}</td>
                                             <td><img src="{{'/images/'.$row->poster}}"></td>
                                             <td>{{$row->file}}</td>
-                                            <td>${{$row->price}}</td>
+                                            
                                             <td>@if(isset($category)){{$category->title}}@endif</td>
                                             <td>@if($row->status == 0) Pending @elseif($row->status == 1) Active @else  <button class="btn btn-danger" data-toggle="modal" data-target="{{'#reject_message'.$row->id}}">Reject Message</button> @endif</td>
                                            @if(auth()->user()->role == 1) <td> 
@@ -196,7 +196,7 @@
                                               <label class="form-check-label" for="flexCheckDefault">
                                                 4K
                                               </label>
-                                              <input type="text" class="input_class form-control" name="fourk_price" value="{{$qualities[0]->price}}">
+                                              <input type="text" class="input_class form-control" name="" value="{{$qualities[0]->price}}">
                                             </div>
                                             <div class="form-check fhd check_class">
                                               <input class="form-check-input" type="checkbox" name="fhd" id="flexCheckChecked" >
